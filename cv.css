@@ -1,0 +1,122 @@
+*{
+  box-sizing: border-box;
+}
+html{
+  min-height: 100%;
+  background-color:  rgb(229, 229, 229);
+  border: solid black 4vw;
+  border-bottom: none;
+}
+body{
+  max-width: 100%;
+  margin: 0;
+  max-height: 100%;
+  font-family: 'Roboto';
+  min-height: 100%;
+}
+header{
+  padding-right: 2vw;
+  padding-top: 2vw;
+  width: 100%;
+  text-align: right;
+}
+header a,button{
+  padding-right: 1vw;
+  font-family: 'Roboto';
+  margin: 1vw;
+}
+a:link{
+  color: black;
+  text-decoration: none;
+}
+a:visited{
+  color: black;
+  text-decoration: none;
+}
+a:active{
+  color: black;
+  text-decoration: none;
+}
+button{
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 2vw;
+}
+.Box{
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+}
+.Intro{
+  margin: auto;
+  padding-bottom: 5vw;
+}
+ul {
+  list-style: none;
+}
+
+ul li:before {
+  content: '✓';
+}
+img{
+  max-height: 100%;
+  max-width: 100%;
+  position: fixed;
+  transform: rotate(-0.02turn);
+}
+.Pic{
+  border: solid black 0.5vw;
+  width: 40vw;
+  height: 60vw;
+  margin: auto;
+  transform: rotate(0.02turn);
+}
+@media only screen and (min-width: 480px){
+h1{
+  font-size: 48.83 px;
+}
+body{
+  font-size: 25px;
+}
+button{
+  font-size: 25px;
+  padding: 1vw;
+  margin: 0;
+}
+.Box{
+  display: flex;
+  max-height: 80%;
+}
+.Pic{
+  margin: 10vw 0 0 0;
+  height: 30vw;
+  width: 20vw;
+}
+image{
+  margin: 10vw 0 0 0;
+}
+.Intro{
+  padding: 0;
+  max-width: 70%;
+  max-height: 60%;
+}
+}
+@media only screen and (min-width: 768px){
+  .Pic{
+    margin: 5vw 0 0 0;
+  }
+  image{
+    margin: 5vw 0 0 0;
+  }
+  }
+  @media only screen and (max-width: 640px){
+    h1{
+        font-size: 39.81 px;
+      }
+      body{
+        font-size: 23.04px;
+      }
+      button{
+        font-size: 23.04px;
+      }}

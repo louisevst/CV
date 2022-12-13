@@ -1,0 +1,78 @@
+*{
+    box-sizing: border-box;
+  }
+  html{
+    min-height: 100%;
+    background-color:  rgb(229, 229, 229);
+    border: solid black 4vw;
+    border-bottom: none;
+  }
+  body{
+    max-width: 100%;
+    margin: 0;
+    max-height: 100%;
+    font-family: 'Roboto';
+    min-height: 100%;
+  }
+  header{
+    padding-right: 2vw;
+    padding-top: 2vw;
+    width: 100%;
+    text-align: right;
+  }
+  header a,button{
+    padding-right: 1vw;
+    font-family: 'Roboto';
+    margin: 1vw;
+  }
+  a:link{
+    color: black;
+    text-decoration: none;
+  }
+  a:visited{
+    color: black;
+    text-decoration: none;
+    text-underline-offset: 1vw;
+  }
+  a:active{
+    color: black;
+    text-decoration: none;
+  }
+  button{
+    background-color: black;
+    color: white;
+    border: none;
+    padding: 2vw;
+  }
+  main{
+    margin: auto;
+    max-width: 100%;
+    text-align: center;
+    padding: 10vw;
+  }
+
+  @media only screen and (min-width: 480px){
+  h1{
+    font-size: 48.83 px;
+  }
+  body{
+    font-size: 25px;
+  }
+  button{
+    font-size: 25px;
+    padding: 1vw;
+    margin: 0;
+  }
+  }
+  @media only screen and (max-width: 640px){
+    h1{
+        font-size: 39.81 px;
+      }
+      body{
+        font-size: 23.04px;
+      }
+      button{
+        font-size: 23.04px;
+      }
+
+  }
