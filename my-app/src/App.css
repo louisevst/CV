@@ -2,6 +2,9 @@
 * {
   box-sizing: border-box;
 }
+h1 {
+  font-family: "la belle aurore";
+}
 h2 {
   font-family: "la belle aurore";
   font-size: 45px;
@@ -25,33 +28,40 @@ header {
   width: 100%;
   text-align: right;
 }
-header a,
-button {
+.nav {
+  color: black;
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+}
+.nav,
+.button {
   padding-right: 1vw;
   font-family: "Raleway";
   margin: 1vw;
   cursor: pointer;
 }
-a:link {
-  color: black;
-  text-decoration: none;
-}
-a:visited {
-  color: black;
-  text-decoration: none;
-  text-underline-offset: 1vw;
-}
-a:active {
-  color: black;
-  text-decoration: none;
-}
-button {
+
+.button {
   background-color: black;
   color: white;
   border: none;
   padding: 2vw;
+  cursor: pointer;
 }
-main {
+a:link {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:visited {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+a:active {
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+}
+.grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: 10vw 25vw;
@@ -95,6 +105,36 @@ main {
   padding-bottom: 0;
 }
 
+.Box {
+  max-width: 90%;
+  max-height: 80%;
+  margin: auto;
+}
+.Intro {
+  margin: auto;
+  padding-bottom: 5vw;
+}
+ul {
+  list-style: none;
+  margin-bottom: 3vw;
+}
+
+ul li:before {
+  content: "✓";
+}
+img {
+  max-height: 100%;
+  max-width: 100%;
+  position: fixed;
+  transform: rotate(-0.02turn);
+}
+.Pic {
+  border: solid black 0.5vw;
+  width: 40vw;
+  height: 60vw;
+  margin: auto;
+  transform: rotate(0.02turn);
+}
 @media only screen and (min-width: 480px) {
   h1 {
     font-size: 48.83 px;
@@ -102,14 +142,39 @@ main {
   body {
     font-size: 20px;
   }
-  button {
+  .button {
     font-size: 20px;
     padding: 1vw;
     margin: 0;
   }
+  .Box {
+    display: flex;
+    max-height: 80%;
+  }
+  .Pic {
+    margin: 10vw 0 0 0;
+    height: 30vw;
+    width: 20vw;
+  }
+  image {
+    margin: 10vw 0 0 0;
+  }
+  .Intro {
+    padding: 0;
+    max-width: 70%;
+    max-height: 60%;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .Pic {
+    margin: 5vw 0 0 0;
+  }
+  image {
+    margin: 5vw 0 0 0;
+  }
 }
 @media only screen and (max-width: 640px) {
-  main {
+  .grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 30vw 1fr);
